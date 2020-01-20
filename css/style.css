@@ -135,8 +135,7 @@ body {
     color: #fff;
    
 }
-.search-button {
-}
+
 .search-button:hover {
     background-color: transparent;
     color: rgb(107, 105, 105);
@@ -252,12 +251,6 @@ body {
     font-weight: 600;
     text-transform: uppercase;
 }
-
-.btn-add {
-
-}
-
-
 
 .hot-form-group {
     margin-bottom: 1.5rem;
