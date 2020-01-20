@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashborad</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/fontawesome/css/all.css">
+</head>
+<body>
+    <div class="wrapper">
+        
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-md ">
+            <button class="navbar-toggler ml-auto mb-2 bg-light"
+                type="button" data-toggler="collapse" data-target="#navBarToggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navBarToggler">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- sideBar -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 sidebar">
+                            <ul class="navbar-nav flex-column mt-4 sidebar-list">
+                                <li class="nav-item">
+                                    <a href="dashboard.html" class="nav-link pt-3 mb-1 sidebar-link">
+                                        <i class="fas fa-home fa-lg mr-2 sidebar-icon-menu"></i>
+                                        Dashboard 
+                                    </a>
+                                </li>
+                                <li class="nav-section">
+                                    <h4 class="text-section">Principal</h4>
+                                </li>
+                                <li class="nav-item collapsed">
+                                    <a href="#" class="nav-link pt-3 mb-1 sidebar-link dropdown-toggle" 
+                                    id="product" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-gift fa-lg mr-2 sidebar-icon-menu"></i>
+                                        <span class="arrow"></span>
+                                        Produtos 
+                                    </a>
+                                    <div class="sidebar-submenu" aria-labelledby="product">
+                                        <ul>
+                                            <li>
+                                                <a href="./pages/produtos/addProduct.html"class="nav-link  sidebar-link">
+                                                    Cadastrar Produto
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="./pages/produtos/listProdutc.html"class="nav-link  sidebar-link">
+                                                    Lista de Produtos
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+   
+
+                                <li class="nav-item collapsed">
+                                    <a href="#" class="nav-link pt-3 mb-1 sidebar-link dropdown-toggle"
+                                    id="sales" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-shopping-cart sidebar-icon-menu fa-lg mr-2"></i>
+                                        vendas 
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <div class="sidebar-submenu" aria-labelledby="sales">
+                                        <ul>
+                                            <li>
+                                                <a href="#"class="nav-link  sidebar-link"> 
+                                                    <!-- <i class="fa fa-plus mr-2 sidebar-icon-menu" aria-hidden="true"></i>  -->
+                                                    Visão Geral
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"class="nav-link  sidebar-link"> 
+                                                    <!-- <i class="fa fa-icon-remo mr-2 sidebar-icon-menu" aria-hidden="true"></i> -->
+                                                    Assinaturas
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"class="nav-link  sidebar-link"> 
+                                                    <!-- <i class="fa fa-plus mr-2 sidebar-icon-menu" aria-hidden="true"></i>  -->
+                                                    Recibos
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript: void(0)" class="nav-link pt-3 mb-1 sidebar-link">
+                                        <i class="fas fa-users sidebar-icon-menu fa-lg mr-2"></i>
+                                        Usuários 
+                                    </a>
+                                </li>
+                                <li class="nav-section">
+                                    <h4 class="text-section">Configurações</h4>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript: void(0)" class="nav-link pt-3 mb-1 sidebar-link">
+                                        <i class="fas fa-user sidebar-icon-menu fa-lg mr-2"></i>
+                                        Perfil 
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript: void(0)" class="nav-link pt-3 mb-1 sidebar-link">
+                                        <i class="fas fa-envelope sidebar-icon-menu fa-lg mr-2"></i>
+                                        Mensagem 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> 
+                        <!-- End of sideBar -->
+
+                        <!-- top-nav -->
+                        <div class="col-xl-12 col-lg-12 col-md-12 ml-auto top-nav fixed-top py-2">
+                            <div class="">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="top-brand d-flex justify-content-center pr-2 pl-2">
+                                            <a href="#" class="navbar-brand text-white text-center pl-2">
+                                                LOGO
+                                            </a>
+                                         </div>
+                                        
+                                     </button>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-white ml-1 search-button" type="button">
+                                                    <i class="fa fa-search search-icon pr-1"></i>
+                                                </button>
+                                                <input type="text" placeholder="Pesquisar" class="form-control search-input" >
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-3" >
+                                        <ul class="navbar-nav top-nav-list">
+                                            <li class="nav-item icon-parent ml-auto my-1 ml-3">
+                                                <a href="#" id="choose-white" class="nav-link icon-bullet"><i class="fa fa-plus-circle text-white fa-lg"></i></a>
+                                            </li>
+                                            <li class="nav-item icon-parent ml-auto my-1 ml-3">
+                                                <a href="#" id="choose-black" class="nav-link icon-bullet"><i class="fa fa-plus-circle text-white fa-lg"></i></a>
+                                            </li>
+                                            <li class="nav-item icon-parent ml-auto my-1 ml-3">
+                                                <a href="#" class="nav-link icon-bullet"><i class="fa fa-comment text-white fa-lg"></i>
+                                                    <span class="badge badge-light notification">9</span>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="nav-item icon-parent ml-3 my-1">
+                                                <a href="#" class="nav-link icon-bullet"><i class="fa fa-bell text-white fa-lg"></i>
+                                                    <span class="badge badge-light notification">2</span>
+                                                </a>
+                                            </li>
+                                            <div class="dropdown">
+                                                <li class="nav-item ml-3">
+                                                    <a href="#"
+                                                        id="profile" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                        <img src="./imgs/man-avatar.jpg" class="rounded-circle" alt="profile" width="32">
+                                                    </a>                                          
+                                                    <div class="dropdown-menu dropdown-menu-right mt-2" aria-labelledby="#profile">
+                                                        <div class="user-box border-bottom">
+                                                            <div class="avatar-lg"><img width="60" src="./imgs/man-avatar.jpg" alt="image profile" class="avatar-img rounded"></div>
+                                                            <div class="text-muted dropdown-menu-text">
+                                                                <h4 class="dropdown-profile-menu-none">Everton</h4>
+                                                                <p class=" dropdown-profile-menu-email">everton@email.com</p>
+                                                            </div>
+                                                        </div>
+                                                        <a class="dropdown-item" href="#">Minha Conta</a>
+                                                        <a class="dropdown-item" href="#">Sair</a>
+                                                    </div>
+                                                </li> 
+                                            </div>    
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end of top-nav -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End of NavBar -->
+        <section >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 col-md-8  ml-auto">
+                        <div class="row pt-md-5 mt-md-3 mb-2 bg-primary-gradient">
+                            <div class="container">
+                                <div class="panel-header ">
+                                    <div class="page-inner py-5">
+                                        <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
+                                            <div>
+                                                <h2 class="text-white pb-2 fw-bold">Dashboard</h2>
+                                                <h5 class="text-white op-7 mb-2">Sejá bem vindo! <strong>Everton Marques</strong></h5>
+                                            </div>
+                                            <div class="ml-md-auto py-2 py-md-0">
+                                                <p class="text-white op-7 mb-2 pt-2 mt-5">Aqui você tem um visão geral de como seu negócio está indo.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin-top-div">
+                            <div class="col-xl-6 col-sm-12 p-2">
+                                <!-- card -->
+                                <div class="card card-common">
+                                    <h4 class="text-section m-3">Estatísticas de receita e gasto total</h4>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card-body py-5">
+                                                <div class="d-flex justify-content-between">
+                                                    <i class="fa fa-shopping-cart fa-3x py-2 text-info"></i>
+                                                    <div class="text-right text-secondary">
+                                                        <h5>Vendas</h5>
+                                                        <h3>R$135.000</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-body py-5">
+                                                <div class="d-flex justify-content-between">
+                                                    <i class="fa fa-money-bill-alt fa-3x py-2 text-info"></i>
+                                                    <div class="text-right text-secondary">
+                                                        <h5>Gastos</h5>
+                                                        <h3>R$39.000</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-footer text-secondary">
+                                        <span>Último Mês</span>
+                                    </div>
+                                </div>
+                                <!-- end of card -->
+                            </div>
+                            <div class="col-xl-6 col-sm-12 p-2">
+                                <!-- card -->
+                                <div class="card card-common">
+                                    <h4 class="text-section m-3">Estatísticas de usuários e visitantes total</h4>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card-body py-5">
+                                                <div class="d-flex justify-content-between">
+                                                    <i class="fa fa-users fa-3x py-2 text-info"></i>
+                                                    <div class="text-right text-secondary">
+                                                        <h5>Usuários</h5>
+                                                        <h3>5.000</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-body py-5">
+                                                <div class="d-flex justify-content-between">
+                                                    <i class="fa fa-chart-line fa-3x py-2 text-info"></i>
+                                                    <div class="text-right text-secondary">
+                                                        <h5>Visitantes</h5>
+                                                        <h3>35.000</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-footer text-secondary">
+                                        <span>Último Mês</span>
+                                    </div>
+                                </div>
+                                <!-- end of card -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-10 col-sm-8 mt-5 ml-auto">
+                        <div class="row margin-section-fix">
+                            <div class="col-xl-8 col-sm-12 col-md-12 mx-sm-auto p-2 ">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="text-section">Os produto mais vendidos este mês</h4>
+                                        <div id="charSales"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-sm-12 p-2 last-sales ">
+                                <div class="card last-sales">
+                                    <div class="card-body last-sales">
+                                        <h4 class="text-section">As últimas vendas realizadas</h4>
+                                        <div class="card-list">
+                                            <div class="item-list">
+                                                <div class="avatar">
+                                                    <img src="./imgs/man-avatar.jpg" alt="..." class="avatar-img rounded-circle" width="30">
+                                                </div>
+                                                <div class="info-user ml-3">
+                                                    <div class="username">Macbook Pro</div>
+                                                    <h4 class="sale-date">11/03/2019</h4>
+                                                </div>
+                                            </div>
+                                            <div class="item-list">
+                                                <div class="avatar">
+                                                    <img src="./imgs/man-avatar.jpg" alt="..." class="avatar-img rounded-circle" width="30">
+                                                </div>
+                                                <div class="info-user ml-3">
+                                                    <div class="username">Macbook</div>
+                                                    <h4 class="sale-date">09/03/2019</h4>
+                                                </div>
+                                            </div>
+                                            <div class="item-list">
+                                                <div class="avatar">
+                                                    <img src="./imgs/man-avatar.jpg" alt="..." class="avatar-img rounded-circle" width="30">
+                                                </div>
+                                                <div class="info-user ml-3">
+                                                    <div class="username">iPhone 7s</div>
+                                                    <h4 class="sale-date">02/03/2019</h4>
+                                                </div>
+                                            </div>
+                                            <div class="item-list">
+                                                <div class="avatar">
+                                                    <img src="./imgs/man-avatar.jpg" alt="..." class="avatar-img rounded-circle" width="30">
+                                                </div>
+                                                <div class="info-user ml-3">
+                                                    <div class="username">Samsung s10</div>
+                                                    <h4 class="sale-date">02/03/2019</h4>
+                                                </div>
+                                            </div>
+                                            <div class="item-list">
+                                                <div class="avatar">
+                                                    <img src="./imgs/man-avatar.jpg" alt="..." class="avatar-img rounded-circle" width="30">
+                                                </div>
+                                                <div class="info-user ml-3">
+                                                    <div class="username">Samsung s10 plus</div>
+                                                    <h4 class="sale-date">01/03/2019</h4>
+                                                </div>
+                                            </div>
+                                            <div class="item-list">
+                                                <div class="avatar">
+                                                    <img src="./imgs/man-avatar.jpg" alt="..." class="avatar-img rounded-circle" width="30">
+                                                </div>
+                                                <div class="info-user ml-3">
+                                                    <div class="username">iPad 6</div>
+                                                    <h4 class="sale-date">01/03/2019</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-10 col-sm-8 mt-5 ml-auto">
+                        <div class="row margin-section-fix">
+                            <div class="col-xl-12 col-sm-12 col-md-12 p-2 ">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div id="chartdiv"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-10 ml-auto pl-2 mt-5">
+                    <footer id="sticky-footer" class="py-3 bg-dark">
+                        <div class="container text-white text-center">
+                          <small>Copyright &copy;  <strong>Everton Lacerda</strong></small>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="./js/Chart.min.js"></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/myCharts.js"></script>
+
+
+</body>
+</html>

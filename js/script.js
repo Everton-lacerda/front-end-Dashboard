@@ -57,6 +57,26 @@ $(".btn-add").click(function(){
       timer: 2500
   })
 })
+$(".btn-icon-dell").click(function(){
+  Swal.fire({
+    title: 'Você tem Certeza?',
+    text: "tem certeza que quer excluir?",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Sim, Remover!',
+    cancelButtonText: 'Não, Cancelar!'
+  }).then((result) => {
+    if (result.value) {
+      Swal.fire(
+        'Deletado!',
+        'Removido com sucesso.',
+        'success'
+      )
+    }
+  })
+})
 
 $(document).ready(function () {
   $('#dtBasicExample').DataTable();
