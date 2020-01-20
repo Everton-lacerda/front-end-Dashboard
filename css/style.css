@@ -1,0 +1,338 @@
+/* Import fonts from fonts.css file */
+@import url(./fonts.css);
+
+/* 
+cinza - 4E546C
+cinza claro - 555C78
+bg - D5D6DD 
+*/
+
+body {
+    font-family: 'Monserrat', sans-serif;
+    background-color: #eee;
+}
+
+.text-section {
+    padding: 15px;
+    font-size: 12px;
+    color: #727275;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* navbar */
+.sidebar {
+    z-index: 50;
+    height: calc(100vh - 55px);
+    margin-top: 46px;
+    left: 0;
+    position: fixed;
+    background-color: #1a2035;
+    box-shadow: 2px 0px 10px 1px #444;
+}
+.sidebar-white {
+    z-index: 50;
+    height: calc(100vh - 55px);
+    margin-top: 46px;
+    left: 0;
+    position: fixed;
+    background-color: #eee;
+    box-shadow: 2px 0px 10px 1px #444;
+}
+.bottom-border {
+    border-bottom: 1px groove #eee;
+    width: 100%;
+}
+.sidebar-link {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 15px;
+    color: #727275;
+    transition: all .1s;
+}
+.sidebar-icon-menu {
+    color: #b9babf  !important;
+    font-size: 16px !important;
+} 
+.nav-link:hover{
+    background-color: #29314d;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: #232a44;
+    color: rgb(82, 82, 82) !important ;
+}
+
+.collapsed.active > a:after {
+    transform: rotate(0deg);
+}
+.collapsed > a:after {
+    right: 15px;
+    transform: rotate(-90deg);
+}
+
+.sidebar-submenu {
+    display: none;
+}
+
+/* end of navbar */
+
+/* top-nav */
+.top-brand {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    background-color: #1572E8 ;
+    max-height: 70px;
+    
+}
+.top-nav {
+    background-color: #1572E8  ;
+    color: white;
+    box-shadow: 2px 0px 20px -4px #111;
+    height: 55px;
+}
+.top-nav-list > li  {
+    font-size: 14px;
+}
+.search-input {
+    border-radius: 0px 8px 8px 0px;
+}
+.search-button {
+    border-radius: 8px 0px 0px 8px;
+}
+.search-input, .search-button {
+    border: 0;
+    background: rgba(0, 0, 0, 0.14) !important;
+    color: #fff;
+    transition: all .4s;
+    
+}
+.search-input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      color: #fff;
+}
+.search-input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: #fff;
+    opacity: 1;
+}
+.search-input::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: #fff;
+    opacity: 1;
+}
+.search-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #fff;
+}
+.search-input::-ms-input-placeholder { /* Microsoft Edge */
+      color: #fff;
+}
+.search-input:focus {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+   
+}
+.search-button {
+}
+.search-button:hover {
+    background-color: transparent;
+    color: rgb(107, 105, 105);
+}
+.toggle-sidebar {
+    background-color: transparent;
+}
+
+.dropdown-menu-right {
+    background-color: #fff;
+}
+.dropdown-item {
+    font-size: 14px;
+    padding: 15px 15px;
+}
+.dropdown-toggle::after {
+    float: right;
+    margin-top: 8px;
+}
+.user-box {
+    display: flex;
+    padding: .25rem 1rem;
+}
+.avatar-lg .rounded {
+    border-radius: 8px !important;
+}
+.dropdown-menu-text {
+    padding: 0 10px;
+
+}
+.dropdown-profile-menu-none {
+    margin-bottom: 5px;
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+.dropdown-profile-menu-email {
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+.icon-parent {
+    position: relative;
+}
+
+.notification {
+    position: absolute;
+    top: -4px;
+    left: 15px;
+    background-color: rgb(206, 49, 141);
+    color: #fff;
+}
+/* end of top-nav */
+
+
+/* cards */
+.card-common{
+    box-shadow: 1px 2px 5px #999;
+    transition: all 1s;
+}
+.card-common:hover{
+    box-shadow: 3px 3px 15px #999;
+    transform: translateY(-1px);
+}
+
+.bg-primary-gradient {
+    background: #1572E8 !important;
+    background: -webkit-linear-gradient(legacy-direction(-45deg), #06418E, #1572E8) !important;
+    background: linear-gradient(-45deg, #06418E, #1572E8) !important;
+}
+.page-inner {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.fw-bold {
+    font-weight: 600 !important;
+}
+.op-7 {
+    opacity: 0.7;
+/* end of card */
+}
+.margin-top-div {
+    margin-top: -50px!important;
+    max-width: 97%;
+    margin: auto;
+}
+.margin-section-fix{
+    max-width: 97%;
+    margin: auto;
+}
+#chartdiv {
+    height: 400px;
+}
+#charSales {
+    height: 410px;
+}
+.last-sales {
+    min-height: 502px!important;
+}
+.card-list .item-list {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    align-items: center;
+}
+.sale-date {
+    font-size: 12px;
+    color: #727275;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-add {
+
+}
+
+
+
+.hot-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.photo-upload-panel {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #d9d9d9;
+}
+
+.hot-card {
+    background-clip: border-box;
+    background-color: #fff;
+    border: 1px solid #dfe2e6;
+    border-radius: .375rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.hot-image {
+    background-color: #f0f3f7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 0;
+    position: relative;
+    width: 100%;
+}
+
+.hot-image > div {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.photo-upload-panel .photo-upload-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: hsla(0,0%,100%,.9);
+    transition: all .5s cubic-bezier(.2,1,.2,1);
+}
+
+.text-small {
+    font-size: .75rem;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+
+.img-photo {
+    background-image: url('../imgs/no-photo.svg');
+}
+
+
+  
