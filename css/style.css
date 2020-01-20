@@ -6,12 +6,19 @@ cinza - 4E546C
 cinza claro - 555C78
 bg - D5D6DD 
 */
+.wrapper {
+    width: 100%;
+}
 
 body {
     font-family: 'Monserrat', sans-serif;
     background-color: #eee;
+    overflow-X: hidden;
 }
 
+#sticky-footer {
+    flex-shrink: none;
+  }
 .text-section {
     padding: 15px;
     font-size: 12px;
@@ -252,64 +259,6 @@ body {
     text-transform: uppercase;
 }
 
-.hot-form-group {
-    margin-bottom: 1.5rem;
-}
-
-.photo-upload-panel {
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid #d9d9d9;
-}
-
-.hot-card {
-    background-clip: border-box;
-    background-color: #fff;
-    border: 1px solid #dfe2e6;
-    border-radius: .375rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    position: relative;
-    word-wrap: break-word;
-}
-
-.hot-image {
-    background-color: #f0f3f7;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    padding-bottom: 0;
-    position: relative;
-    width: 100%;
-}
-
-.hot-image > div {
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-}
-
-.photo-upload-panel .photo-upload-label {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background: hsla(0,0%,100%,.9);
-    transition: all .5s cubic-bezier(.2,1,.2,1);
-}
-
 .text-small {
     font-size: .75rem;
 }
@@ -340,4 +289,19 @@ body {
     position: absolute;
     right: 0px;
     top: 70px;
+}
+
+.bg-table {
+    border-radius: 5px;
+    background-color: rgb(98, 98, 98);
+    color: #fff;
+}
+
+.btn-icon {
+    cursor: pointer;
+    transition: all 1s;
+}
+.btn-icon:hover {
+    cursor: pointer;
+    color: white;
 }

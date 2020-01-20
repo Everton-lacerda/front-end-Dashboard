@@ -58,6 +58,11 @@ $(".btn-add").click(function(){
   })
 })
 
+$(document).ready(function () {
+  $('#dtBasicExample').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});
+
 // $(function () {
     // $(".wrapper .sidebar .sidebar-list > li:first-child").addClass('active');
     // let defaultScrollTop = $(".wrapper .sidebar .sidebar-list > li:first-child").position().top + 7;
