@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7d5fe80089.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -192,7 +192,13 @@
                                     </div>
                                 </div>
                             </div>
-
+                            
+                            <div class="alert alert-success alert-dismissible fade" role="alert">
+                                <strong>Sucesso!</strong> Produto Cadastrado
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                         </div>
                         <!-- end of top-nav -->
                     </div>
@@ -212,7 +218,7 @@
                                             class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
                                             <div>
                                                 <h2 class="text-white pb-2 fw-bold">Adicionar novos produtos</h2>
-                                                <h5 class="text-white op-7 mb-2">Complete os campos abaixo</strong></h5>
+                                                <h5 class="text-white op-7 mb-2">Os dados abaixo são muito importantes para seu produto. Preencha-os com atenção.</strong></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -225,90 +231,70 @@
                             <div class="col-xl-12 col-sm-6 p-2">
                                 <!-- card -->
                                 <div class="card card-common">
-                                    <h4 class="text-section m-3">Informações Básicas</h4>
+                                    <h4 class="text-secondary p-5">Informações Básicas</h4>
                                     <div class="row">
-                                        <div class="col-xl-3">
+                                        <div class="col-xl-4">
                                             <div class="card-body py-5">
-                                                <div class="d-flex justify-content-between">
-                                                    <div id="product-photos">
-                                                        <div class="hot-form-group">
-                                                            <label>
-                                                                Foto Principal
-                                                            </label>
-                                                            <div class="hot-card photo-upload-panel">
-                                                                <form method="POST" enctype="multipart/form-data">
-                                                                    <label class="d-block m-0">
-                                                                        <div class="drop-zone display">
+                                                <div class="">
+                                                    
 
-                                                                            <div class="hot-image rounded">
-                                                                                <div
-                                                                                    style="background-image: url('../../imgs/no-photo.svg')">
-                                                                                </div>
-
-                                                                                <div class="photo-upload-label">
-                                                                                    <div class="p-1">
-                                                                                        <p class="text-center m-0">
-                                                                                            <svg class="svg-inline--fa fa-camera fa-w-16"
-                                                                                                aria-hidden="true"
-                                                                                                focusable="false"
-                                                                                                data-prefix="far"
-                                                                                                data-icon="camera"
-                                                                                                role="img"
-                                                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                                                viewBox="0 0 512 512"
-                                                                                                data-fa-i2svg="">
-                                                                                                <path
-                                                                                                    fill="currentColor"
-                                                                                                    d="M342.7 144H464v288H48V144h121.3l24-64h125.5l23.9 64zM324.3 32h-131c-20 0-37.9 12.4-44.9 31.1L136 96H48c-26.5 0-48 21.5-48 48v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48h-88l-14.3-38c-5.8-15.7-20.7-26-37.4-26zM256 408c-66.2 0-120-53.8-120-120s53.8-120 120-120 120 53.8 120 120-53.8 120-120 120zm0-192c-39.7 0-72 32.3-72 72s32.3 72 72 72 72-32.3 72-72-32.3-72-72-72z">
-                                                                                                </path>
-                                                                                            </svg>
-                                                                                            <!-- <i class="far fa-camera"></i> -->
-                                                                                            Selecione ou arraste o
-                                                                                            arquivo
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </div>
-
-                                                                            </div>
-
-                                                                            <input class="d-none cover-photo"
-                                                                                type="file" name="data"
-                                                                                data-form-data="{&quot;contentType&quot;:&quot;multipart/form-data&quot;}"
-                                                                                accept="">
-
-                                                                        </div>
-                                                                    </label>
-                                                                </form>
-                                                            </div>
+                                                    <div class="">
+                                                        <p class="text-muted text-center">Imagem Principal</p>
+                                                        <div class="text-center">
+                                                            <img src="../../imgs/no-photo.svg" id="preview" class="img-thumbnail">
                                                         </div>
-                                                        <p class="text-muted text-small mt-1 mb-3">
-                                                            <svg class="svg-inline--fa fa-info-circle fa-w-16"
-                                                                aria-hidden="true" focusable="false" data-prefix="fas"
-                                                                data-icon="info-circle" role="img"
-                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                                                data-fa-i2svg="">
-                                                                <path fill="currentColor"
-                                                                    d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
-                                                                </path>
-                                                            </svg>
-                                                            A imagem escolhida deve estar no formato <strong>JPG, PNG ou
-                                                                GIF</strong> e ter no máximo 5 MB de tamanho. Dimensões
-                                                            ideais: 600x600 pixels.
-
-                                                        </p>
-
+                                                        <form method="post" id="image-form">
+                                                          <input type="file" name="img[]" class="file" accept="image/*">
+                                                          <div class="input-group my-3 pl-4 pr-4" >
+                                                            <input type="text" class="form-control form-control-sm" disabled placeholder="Escolha uma imagem" id="file">
+                                                            <div class="input-group-append">
+                                                              <button type="button" class="browse btn btn-primary btn-sm">Escolher</button>
+                                                            </div>
+                                                          </div>
+                                                        </form>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xl-9">
+                                        <div class="col-xl-8">
                                             <div class="card-body py-5">
-                                                <div class="d-flex justify-content-between">
-                                                    <!-- <i class="fa fa-money-bill-alt fa-3x py-2 text-info"></i>
-                                                    <div class="text-right text-secondary">
-                                                        <h5>Gastos</h5>
-                                                        <h3>R$39.000</h3>
-                                                    </div> -->
+                                                <div class="">
+                                                    <form action="post" id="form">
+                                                        <div class="col-lx-12">
+                                                            <div class="form-group">
+                                                                <label for="name-product" class="text-muted" >Nome do Produto</label>
+                                                                <input type="text" class="form-control" name="name-product" id="name-product" aria-describedby="helpId" placeholder="Escolha o nome do produto">
+                                                                
+                                                                <div class="form-group pt-3">
+                                                                  <label for="desc-product" class="text-muted" >Descrição do Produto</label>
+                                                                  <textarea class="form-control" name="desc-product" id="desc-product" rows="3"
+                                                                  placeholder="Escolha a descrição ideal para seu produto"></textarea>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col-6">
+                                                                        <div class="form-group">
+                                                                            <label for="categ-product" class="text-muted">Categoria do Produto</label>
+                                                                            <select class="form-control" name="categ-product" id="categ-product">
+                                                                              <option>Notebook</option>
+                                                                              <option>Celulares</option>
+                                                                              <option>Outros</option>
+                                                                            </select>
+                                                                          </div>
+                                                                    </div>
+                                                                    <div class="col-6">
+                                                                        <div class="form-group">
+                                                                          <label for="quant-product" class="text-muted">Quantidade</label>
+                                                                          <input type="number"
+                                                                            class="form-control" name="quant-product" id="quant-product" aria-describedby="helpId" placeholder="Escolha a quantidade do produto">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
@@ -316,7 +302,7 @@
 
                                     <div class="ml-auto">
                                         <div class="container-fluid p-5">
-                                            <button type="submit" class="btn btn-info btn-add">Adicionar</button>
+                                            <button onclick="alertSuccess()" type="submit" class="btn btn-info btn-add">Adicionar</button>
                                         </div>
 
                                     </div>
@@ -332,10 +318,11 @@
         </section>
     </div>
     <script src="../../"></script>
+    <script src="https://kit.fontawesome.com/7d5fe80089.js" crossorigin="anonymous"></script>
     <script src="../../js/jquery-3.4.1.min.js"></script>
     <script src="../../js/bootstrap.bundle.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="../../js/Chart.min.js"></script>
     <script src="https://www.amcharts.com/lib/4/core.js"></script>
     <script src="https://www.amcharts.com/lib/4/maps.js"></script>
@@ -343,7 +330,6 @@
     <script src="https://www.amcharts.com/lib/4/charts.js"></script>
     <script src="../../js/script.js"></script>
     <script src="../../js/myCharts.js"></script>
-
 
 </body>
 

@@ -47,11 +47,11 @@ body {
     font-weight: 500;
     font-size: 14px;
     padding: 15px;
-    color: #727275;
+    color: #eee;
     transition: all .1s;
 }
 .sidebar-icon-menu {
-    color: #b9babf  !important;
+    color: #eee  !important;
     font-size: 16px !important;
 } 
 .nav-link:hover{
@@ -335,4 +335,16 @@ body {
 }
 
 
-  
+.file {
+    visibility: hidden;
+    position: absolute;
+}
+.img-thumbnail{
+    width: 80%;
+}
+
+.alert{
+    position: absolute;
+    right: 0px;
+    top: 70px;
+}
