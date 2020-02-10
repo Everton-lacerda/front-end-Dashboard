@@ -1,0 +1,317 @@
+/* Import fonts from fonts.css file */
+@import url(./fonts.css);
+
+/* 
+cinza - 4E546C
+cinza claro - 555C78
+bg - D5D6DD 
+*/
+#chartdivTeste {
+    width: 100%;
+    height: 500px;
+  }
+#chart {
+    width: 100%;
+    height: 500px;
+  }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color:  #F7FBFC;
+    overflow-X: hidden;
+}
+.app {
+    width: 88%;
+    max-width: 1500px;
+    padding: 5% 0;
+    margin: 0 auto;
+}
+.my-header  {
+    color: #888;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 3%;
+    transition: all 2s;
+}
+.my-header span {
+    transition: all .2s;
+}
+.my-header:hover span {
+    color: #6194A0;
+    cursor: pointer;
+}
+
+.app_sidebar {
+    flex-basis: 20%;
+    background: #ffffff;
+    padding: 15px;
+    min-height: 300px;
+}
+
+.app_main {
+    flex-basis: 20%;
+    background: #ffffff;
+    padding: 15px;
+}
+
+.col-default {
+    width: 345px;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+    
+    background-color: #F7FBFC;
+    color: #6194A0;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.nav-link i {
+    font-size: 14px; 
+}
+.nav-link:hover {
+    background-color: #6194A0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.active {
+    background-color: #6194A0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.sidebar-submenu ul li {
+    list-style: disc;
+    color: #6194A0;
+}
+
+.btn-default {
+    background: rgba(0, 0, 0, 0.05);
+    color: #6194A0;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 5px;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.btn-default:hover {
+    background-color: rgb(129, 183, 196);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn-default-2 {
+    background: rgba(0, 0, 0, 0.05);
+    color: #6194A0;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.btn-default-2:hover {
+    background-color: rgb(129, 183, 196);
+    color: #fff;
+    font-size: 14px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.color-default {
+    color: #6194A0;
+}
+
+.card-dash:hover .card-body {
+    cursor: pointer;
+}
+.card-dash:hover .card-body i {
+    cursor: pointer;
+}
+
+
+
+#chartdiv {
+    height: 400px;
+}
+#charSales {
+    height: 410px;
+}
+.last-sales {
+    min-height: 450px!important;
+}
+.card-list .item-list {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    align-items: center;
+}
+.sale-date {
+    font-size: 12px;
+    color: #727275;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.user-box {
+    display: flex;
+    padding: .25rem 1rem;
+}
+.avatar-lg .rounded {
+    border-radius: 8px !important;
+}
+
+
+.mes {
+    padding: 3px 8px;
+    border-radius: 5px;
+    background: #36BA9B;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.font-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.font-subtitle {
+    font-size: 16px;
+    color: #ffffff;
+
+}
+
+.bg-card-title {
+    background-color: #6194A0;
+}
+
+
+.img-photo {
+    background-image: url('../imgs/no-photo.svg');
+}
+
+
+.file {
+    visibility: hidden;
+    position: absolute;
+}
+.img-thumbnail{
+    width: 90%;
+}
+
+.bg-table {
+    border-radius: 5px;
+    background-color: rgb(98, 98, 98);
+    color: #fff;
+}
+.input_message {
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    right: 0;
+    padding: 0 30px 0 20px;
+}
+
+.message{
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.bg-message-left {
+    background-color: #F7FBFC;
+    color: #6194A0;
+    border-right: solid 1px rgb(150, 149, 149);
+    width: 360px;
+    height: 500px;
+    overflow-y: scroll; 
+}
+.message-name {
+    padding-left: 15px;
+    color: rgb(78, 77, 77);
+    overflow: hidden;
+    color: #6194A0;
+}
+.chat {
+    padding: 25px 15px;
+    border-bottom: solid 1px rgb(207, 207, 207);
+    cursor: pointer;
+}
+.chat-messages {
+    display: flex; 
+}
+.chat-messages-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.chat-messages-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.chat-messages-body span{
+    color: rgb(80, 80, 80);
+
+}
+.active-chat {
+    background-color: rgb(255, 253, 253);
+}
+.btn-chat-more {
+    padding: 0px 5px;
+    margin-top: 30px;
+}
+
+.box-message-user {
+    background-color: #6194A0;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+.box-chat-messages-user {
+    display: flex; 
+    
+}
+.box-date-message-user {
+    float: right;
+    margin-right: 70px;
+    color: gray;
+
+}
+.box-message {
+    background-color: #F7FBFC;
+    padding: 10px;
+    border-radius: 15px;
+}
+.box-chat-messages {
+    display: flex; 
+}
+.box-date-message {
+    display: inline;
+    position: relative;
+    left: 75px;
+    color: gray;    
+}
+.message-chat {
+    width: 70%;
+}

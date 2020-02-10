@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,385 +8,360 @@
     <title>Dashborad</title>
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_2.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./lib/fontawesome/css/all.css">
+
 </head>
+
 <body>
+
     <div class="wrapper">
-        
-        <!-- NavBar -->
-        <nav class="navbar navbar-expand-md ">
-            <button class="navbar-toggler ml-auto mb-2 bg-light"
-                type="button" data-toggler="collapse" data-target="#navBarToggler">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navBarToggler">
-                <div class="container-fluid">
-                    <div class="row">
-                        <!-- sideBar -->
-                        <div class="col-xl-2 col-lg-3 col-md-4 sidebar">
-                            <ul class="navbar-nav flex-column mt-4 sidebar-list">
-                                <li class="nav-item">
-                                    <a href="dashboard.html" class="nav-link pt-3 mb-1 sidebar-link">
-                                        <i class="fas fa-home fa-lg mr-2 sidebar-icon-menu"></i>
-                                        Dashboard 
-                                    </a>
-                                </li>
-                                <li class="nav-section">
-                                    <h4 class="text-section">Principal</h4>
-                                </li>
-                                <li class="nav-item collapsed">
-                                    <a href="#" class="nav-link pt-3 mb-1 sidebar-link dropdown-toggle" 
-                                    id="product" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-gift fa-lg mr-2 sidebar-icon-menu"></i>
-                                        <span class="arrow"></span>
-                                        Produtos 
-                                    </a>
-                                    <div class="sidebar-submenu" aria-labelledby="product">
-                                        <ul>
-                                            <li>
-                                                <a href="./pages/produtos/addProduct.html"class="nav-link  sidebar-link">
-                                                    Cadastrar Produto
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="./pages/produtos/listProdutc.html"class="nav-link  sidebar-link">
-                                                    Lista de Produtos
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-   
-
-                                <li class="nav-item collapsed">
-                                    <a href="#" class="nav-link pt-3 mb-1 sidebar-link dropdown-toggle"
-                                    id="sales" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-shopping-cart sidebar-icon-menu fa-lg mr-2"></i>
-                                        vendas 
-                                        <span class="arrow"></span>
-                                    </a>
-                                    <div class="sidebar-submenu" aria-labelledby="sales">
-                                        <ul>
-                                            <li>
-                                                <a href="#"class="nav-link  sidebar-link"> 
-                                                    <!-- <i class="fa fa-plus mr-2 sidebar-icon-menu" aria-hidden="true"></i>  -->
-                                                    Visão Geral
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#"class="nav-link  sidebar-link"> 
-                                                    <!-- <i class="fa fa-icon-remo mr-2 sidebar-icon-menu" aria-hidden="true"></i> -->
-                                                    Assinaturas
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#"class="nav-link  sidebar-link"> 
-                                                    <!-- <i class="fa fa-plus mr-2 sidebar-icon-menu" aria-hidden="true"></i>  -->
-                                                    Recibos
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="javascript: void(0)" class="nav-link pt-3 mb-1 sidebar-link">
-                                        <i class="fas fa-users sidebar-icon-menu fa-lg mr-2"></i>
-                                        Usuários 
-                                    </a>
-                                </li>
-                                <li class="nav-section">
-                                    <h4 class="text-section">Configurações</h4>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="javascript: void(0)" class="nav-link pt-3 mb-1 sidebar-link">
-                                        <i class="fas fa-user sidebar-icon-menu fa-lg mr-2"></i>
-                                        Perfil 
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="javascript: void(0)" class="nav-link pt-3 mb-1 sidebar-link">
-                                        <i class="fas fa-envelope sidebar-icon-menu fa-lg mr-2"></i>
-                                        Mensagem 
-                                    </a>
-                                </li>
-                            </ul>
-                        </div> 
-                        <!-- End of sideBar -->
-
-                        <!-- top-nav -->
-                        <div class="col-xl-12 col-lg-12 col-md-12 ml-auto top-nav fixed-top py-2">
-                            <div class="">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <div class="top-brand d-flex justify-content-center pr-2 pl-2">
-                                            <a href="#" class="navbar-brand text-white text-center pl-2">
-                                                LOGO
-                                            </a>
-                                         </div>
-                                        
-                                     </button>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <button class="btn btn-white ml-1 search-button" type="button">
-                                                    <i class="fa fa-search search-icon pr-1"></i>
-                                                </button>
-                                                <input type="text" placeholder="Pesquisar" class="form-control search-input" >
-                                            </div>  
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-md-3" >
-                                        <ul class="navbar-nav top-nav-list">
-                                            <li class="nav-item icon-parent ml-auto my-1 ml-3">
-                                                <a href="#" id="choose-white" class="nav-link icon-bullet"><i class="fa fa-plus-circle text-white fa-lg"></i></a>
-                                            </li>
-                                            <li class="nav-item icon-parent ml-auto my-1 ml-3">
-                                                <a href="#" id="choose-black" class="nav-link icon-bullet"><i class="fa fa-plus-circle text-white fa-lg"></i></a>
-                                            </li>
-                                            <li class="nav-item icon-parent ml-auto my-1 ml-3">
-                                                <a href="#" class="nav-link icon-bullet"><i class="fa fa-comment text-white fa-lg"></i>
-                                                    <span class="badge badge-light notification">9</span>
-                                                    
-                                                </a>
-                                            </li>
-                                            <li class="nav-item icon-parent ml-3 my-1">
-                                                <a href="#" class="nav-link icon-bullet"><i class="fa fa-bell text-white fa-lg"></i>
-                                                    <span class="badge badge-light notification">2</span>
-                                                </a>
-                                            </li>
-                                            <div class="dropdown">
-                                                <li class="nav-item ml-3">
-                                                    <a href="#"
-                                                        id="profile" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                                        <img src="./imgs/man-avatar.jpg" class="rounded-circle" alt="profile" width="32">
-                                                    </a>                                          
-                                                    <div class="dropdown-menu dropdown-menu-right mt-2" aria-labelledby="#profile">
-                                                        <div class="user-box border-bottom">
-                                                            <div class="avatar-lg"><img width="60" src="./imgs/man-avatar.jpg" alt="image profile" class="avatar-img rounded"></div>
-                                                            <div class="text-muted dropdown-menu-text">
-                                                                <h4 class="dropdown-profile-menu-none">Everton</h4>
-                                                                <p class=" dropdown-profile-menu-email">everton@email.com</p>
-                                                            </div>
-                                                        </div>
-                                                        <a class="dropdown-item" href="#">Minha Conta</a>
-                                                        <a class="dropdown-item" href="#">Sair</a>
-                                                    </div>
-                                                </li> 
-                                            </div>    
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- end of top-nav -->
-                    </div>
+        <!-- <div class="container-fluid my-header">
+            
+        </div> -->
+        <div class="app">
+            <div class="row">
+                <div class="col my-header">
+                    <span><i class="fa fa-shopping-basket" aria-hidden="true"></i> LojaOnline</span>
                 </div>
-            </div>
-        </nav>
-        <!-- End of NavBar -->
-        <section >
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xl-10 col-lg-9 col-md-8  ml-auto">
-                        <div class="row pt-md-5 mt-md-3 mb-2 bg-primary-gradient">
-                            <div class="container">
-                                <div class="panel-header ">
-                                    <div class="page-inner py-5">
-                                        <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
-                                            <div>
-                                                <h2 class="text-white pb-2 fw-bold">Dashboard</h2>
-                                                <h5 class="text-white op-7 mb-2">Sejá bem vindo! <strong>Everton Marques</strong></h5>
-                                            </div>
-                                            <div class="ml-md-auto py-2 py-md-0">
-                                                <p class="text-white op-7 mb-2 pt-2 mt-5">Aqui você tem um visão geral de como seu negócio está indo.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row margin-top-div">
-                            <div class="col-xl-6 col-sm-12 p-2">
-                                <!-- card -->
-                                <div class="card card-common">
-                                    <h4 class="text-section m-3">Estatísticas de receita e gasto total</h4>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="card-body py-5">
-                                                <div class="d-flex justify-content-between">
-                                                    <i class="fa fa-shopping-cart fa-3x py-2 text-info"></i>
-                                                    <div class="text-right text-secondary">
-                                                        <h5>Vendas</h5>
-                                                        <h3>R$135.000</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card-body py-5">
-                                                <div class="d-flex justify-content-between">
-                                                    <i class="fa fa-money-bill-alt fa-3x py-2 text-info"></i>
-                                                    <div class="text-right text-secondary">
-                                                        <h5>Gastos</h5>
-                                                        <h3>R$39.000</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card-footer text-secondary">
-                                        <span>Último Mês</span>
-                                    </div>
-                                </div>
-                                <!-- end of card -->
-                            </div>
-                            <div class="col-xl-6 col-sm-12 p-2">
-                                <!-- card -->
-                                <div class="card card-common">
-                                    <h4 class="text-section m-3">Estatísticas de usuários e visitantes total</h4>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="card-body py-5">
-                                                <div class="d-flex justify-content-between">
-                                                    <i class="fa fa-users fa-3x py-2 text-info"></i>
-                                                    <div class="text-right text-secondary">
-                                                        <h5>Usuários</h5>
-                                                        <h3>5.000</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card-body py-5">
-                                                <div class="d-flex justify-content-between">
-                                                    <i class="fa fa-chart-line fa-3x py-2 text-info"></i>
-                                                    <div class="text-right text-secondary">
-                                                        <h5>Visitantes</h5>
-                                                        <h3>35.000</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card-footer text-secondary">
-                                        <span>Último Mês</span>
-                                    </div>
-                                </div>
-                                <!-- end of card -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-10 col-sm-8 mt-5 ml-auto">
-                        <div class="row margin-section-fix">
-                            <div class="col-xl-8 col-sm-12 col-md-12 mx-sm-auto p-2 ">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="text-section">Os produto mais vendidos este mês</h4>
-                                        <div id="charSales"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-sm-12 p-2 last-sales ">
-                                <div class="card last-sales">
-                                    <div class="card-body last-sales">
-                                        <h4 class="text-section">As últimas vendas realizadas</h4>
-                                        <div class="card-list">
-                                            <div class="item-list">
-                                                <div class="avatar">
-                                                    <img src="./imgs/man-avatar.jpg" alt="..." class="avatar-img rounded-circle" width="30">
-                                                </div>
-                                                <div class="info-user ml-3">
-                                                    <div class="username">Macbook Pro</div>
-                                                    <h4 class="sale-date">11/03/2019</h4>
-                                                </div>
-                                            </div>
-                                            <div class="item-list">
-                                                <div class="avatar">
-                                                    <img src="./imgs/man-avatar.jpg" alt="..." class="avatar-img rounded-circle" width="30">
-                                                </div>
-                                                <div class="info-user ml-3">
-                                                    <div class="username">Macbook</div>
-                                                    <h4 class="sale-date">09/03/2019</h4>
-                                                </div>
-                                            </div>
-                                            <div class="item-list">
-                                                <div class="avatar">
-                                                    <img src="./imgs/man-avatar.jpg" alt="..." class="avatar-img rounded-circle" width="30">
-                                                </div>
-                                                <div class="info-user ml-3">
-                                                    <div class="username">iPhone 7s</div>
-                                                    <h4 class="sale-date">02/03/2019</h4>
-                                                </div>
-                                            </div>
-                                            <div class="item-list">
-                                                <div class="avatar">
-                                                    <img src="./imgs/man-avatar.jpg" alt="..." class="avatar-img rounded-circle" width="30">
-                                                </div>
-                                                <div class="info-user ml-3">
-                                                    <div class="username">Samsung s10</div>
-                                                    <h4 class="sale-date">02/03/2019</h4>
-                                                </div>
-                                            </div>
-                                            <div class="item-list">
-                                                <div class="avatar">
-                                                    <img src="./imgs/man-avatar.jpg" alt="..." class="avatar-img rounded-circle" width="30">
-                                                </div>
-                                                <div class="info-user ml-3">
-                                                    <div class="username">Samsung s10 plus</div>
-                                                    <h4 class="sale-date">01/03/2019</h4>
-                                                </div>
-                                            </div>
-                                            <div class="item-list">
-                                                <div class="avatar">
-                                                    <img src="./imgs/man-avatar.jpg" alt="..." class="avatar-img rounded-circle" width="30">
-                                                </div>
-                                                <div class="info-user ml-3">
-                                                    <div class="username">iPad 6</div>
-                                                    <h4 class="sale-date">01/03/2019</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-10 col-sm-8 mt-5 ml-auto">
-                        <div class="row margin-section-fix">
-                            <div class="col-xl-12 col-sm-12 col-md-12 p-2 ">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div id="chartdiv"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
-                    </div>
+                <div>
+                    <button type="button" class="btn btn-default mr-3">Precisa de Ajuda?</button>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-10 ml-auto pl-2 mt-5">
-                    <footer id="sticky-footer" class="py-3 bg-dark">
-                        <div class="container text-white text-center">
-                          <small>Copyright &copy;  <strong>Everton Lacerda</strong></small>
+                <div class="col-xl-2 col-lg-3 col-md-4 m-0 p-0">
+                    <div class="card app_sidebar box-shadow">
+                        <div class="body">
+                            <div class="d-flex align-items-center">
+                                <img src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/10_avatar-512.png"
+                                    alt="" width="35">
+                                <span class="font-weight-bold color-default ml-1">Everton Marques</span>
+                            </div>
+
+                            <hr>
+                            <ul class="navbar-nav flex-column ">
+                                <li class="nav-item">
+                                    <a href="dashboard.html" class="nav-link sidebar-link active">
+                                        <i class="fas fa-home fa-lg mr-2 ml-3 sidebar-icon-menu"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="#" class="nav-link sidebar-link dropdown-toggle">
+                                        <i class="fas fa-gift fa-lg mr-2 ml-3 sidebar-icon-menu"></i>
+                                        <span class="arrow"></span>
+                                        Produtos
+                                    </a>
+                                    <div class="sidebar-submenu" aria-labelledby="product">
+                                        <ul>
+                                            <li class="">
+                                                <a href="./pages/produtos/cadastrarProdutos.html" class="nav-link pl-3">
+                                                    Cadastrar
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="./pages/produtos/listarProdutos.html" class="nav-link pl-3">
+                                                    Listar
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="./pages/produtos/perfilDashboard.html" class="nav-link sidebar-link">
+                                        <i class="fas fa-user fa-lg mr-2 ml-3 sidebar-icon-menu"></i>
+                                        Perfil
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="./pages/produtos/msgProduct.html" class="nav-link sidebar-link">
+                                        <i class="fas fa-envelope fa-lg mr-2 ml-3 sidebar-icon-menu"></i>
+                                        Mensagem
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="dashboard.html" class="nav-link sidebar-link">
+                                        <i class="fa fa-sign-out-alt fa-lg mr-2 ml-3 sidebar-icon-menu"></i>
+                                        Sair
+                                    </a>
+                                </li>
+                            </ul>
+
                         </div>
-                    </footer>
+                    </div>
+                </div>
+                <!-- End of sideBar -->
+
+                <div class="col-xl-10 col-lg-3 col-md-4">
+                    <div class="card box-shadow app_main bg-card-title">
+                        <div class="body ">
+                            <div class="row ">
+                                <div class="col d-flex justify-content-between">
+                                    <div>
+                                        <i class="fa fa-chart-bar color-default font-title" aria-hidden="true"></i>
+                                        <span class="ml-1 font-weight-bold color-default font-title">Dashboard</span>
+                                    </div>
+                                    <div>
+                                        <span class="ml-1 font-weight-bold color-default font-subtitle">Aqui você tem um visão geral
+                                            de como seu negócio está indo</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-sm-12 pt-4">
+                            <!-- card -->
+                            <div class="card box-shadow ">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-between">
+                                        <div class="pt-3 pl-3">
+                                            <i class="fa fa-chart-bar color-default" aria-hidden="true"></i>
+                                            <span class="ml-1 font-weight-bold color-default">Estatísticas de receita e gasto total</span>
+                                        </div>
+                                        <div class="pt-3 pr-3">
+                                            <span class="mes">Por Mês</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <!-- <h5 class="text-secondary m-3">Estatísticas de receita e gasto total</h5> -->
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card-body py-5">
+                                            <div class="d-flex justify-content-between">
+                                                <i class="fa fa-shopping-cart fa-2x py-2 text-info"></i>
+                                                <div class="text-right text-secondary">
+                                                    <span>Vendas</span>
+                                                    <h4>R$135.000</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body py-5">
+                                            <div class="d-flex justify-content-between">
+                                                <i class="fa fa-money-bill-alt fa-2x py-2 text-info"></i>
+                                                <div class="text-right text-secondary">
+                                                    <span>Gastos</span>
+                                                    <h4>R$39.000</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- end of card -->
+                        </div>
+                        <div class="col-xl-6 col-sm-12 pt-4">
+                            <!-- card -->
+                            <div class="card box-shadow ">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-between">
+                                        <div class="pt-3 pl-3">
+                                            <i class="fa fa-chart-bar color-default" aria-hidden="true"></i>
+                                            <span class="ml-1 font-weight-bold color-default">Estatísticas de usuários e visitantes total</span>
+                                        </div>
+                                        <div class="pt-3 pr-3">
+                                            <span class="mes">Por Mês</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card-body py-5">
+                                            <div class="d-flex justify-content-between">
+                                                <i class="fa fa-users fa-2x py-2 text-info"></i>
+                                                <div class="text-right text-secondary">
+                                                    <span>Usuários</span>
+                                                    <h4>5.000</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body py-5">
+                                            <div class="d-flex justify-content-between">
+                                                <i class="fa fa-chart-line fa-2x py-2 text-info"></i>
+                                                <div class="text-right text-secondary">
+                                                    <span>Visitantes</span>
+                                                    <h4>35.000</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- end of card -->
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-7">
+                            <div class="card box-shadow app_main mt-3">
+                                <div class="body">
+                                    <div class="row ">
+                                        <div class="col d-flex justify-content-between">
+                                            <div>
+                                                <i class="fa fa-chart-bar color-default" aria-hidden="true"></i>
+                                                <span class="ml-1 font-weight-bold color-default">Os produtos mais
+                                                    vendidos esse mês</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <hr>
+
+
+                                    <div class="card border-0 chartdiv">
+                                        <div class="card-body">
+                                            <div id="chartdiv"></div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-5 ">
+                            <div class="card box-shadow app_main mt-3">
+                                <div class="body">
+                                    <div class="row ">
+                                        <div class="col d-flex justify-content-between">
+                                            <div>
+                                                <i class="fa fa-chart-bar color-default" aria-hidden="true"></i>
+                                                <span class="ml-1 font-weight-bold color-default">As últimas vendas
+                                                    realizadas</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <hr>
+
+
+
+                                    <div class="card border-0 last-sales">
+                                        <div class="card-body last-sales">
+                                            <div class="card-list">
+                                                <div class="item-list">
+                                                    <div class="avatar">
+                                                        <img src="./imgs/man-avatar.jpg" alt="..."
+                                                            class="avatar-img rounded-circle" width="30">
+                                                    </div>
+                                                    <div class="info-user ml-3">
+                                                        <div class="username">Macbook Pro</div>
+                                                        <h4 class="sale-date">11/03/2019</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="item-list">
+                                                    <div class="avatar">
+                                                        <img src="./imgs/man-avatar.jpg" alt="..."
+                                                            class="avatar-img rounded-circle" width="30">
+                                                    </div>
+                                                    <div class="info-user ml-3">
+                                                        <div class="username">Macbook</div>
+                                                        <h4 class="sale-date">09/03/2019</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="item-list">
+                                                    <div class="avatar">
+                                                        <img src="./imgs/man-avatar.jpg" alt="..."
+                                                            class="avatar-img rounded-circle" width="30">
+                                                    </div>
+                                                    <div class="info-user ml-3">
+                                                        <div class="username">iPhone 7s</div>
+                                                        <h4 class="sale-date">02/03/2019</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="item-list">
+                                                    <div class="avatar">
+                                                        <img src="./imgs/man-avatar.jpg" alt="..."
+                                                            class="avatar-img rounded-circle" width="30">
+                                                    </div>
+                                                    <div class="info-user ml-3">
+                                                        <div class="username">Samsung s10</div>
+                                                        <h4 class="sale-date">02/03/2019</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="item-list">
+                                                    <div class="avatar">
+                                                        <img src="./imgs/man-avatar.jpg" alt="..."
+                                                            class="avatar-img rounded-circle" width="30">
+                                                    </div>
+                                                    <div class="info-user ml-3">
+                                                        <div class="username">Samsung s10 plus</div>
+                                                        <h4 class="sale-date">01/03/2019</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="item-list">
+                                                    <div class="avatar">
+                                                        <img src="./imgs/man-avatar.jpg" alt="..."
+                                                            class="avatar-img rounded-circle" width="30">
+                                                    </div>
+                                                    <div class="info-user ml-3">
+                                                        <div class="username">iPad 6</div>
+                                                        <h4 class="sale-date">01/03/2019</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-12 ml-auto">
+                            <div class="card box-shadow app_main mt-3">
+                                <div class="body">
+                                    <div class="row ">
+                                        <div class="col d-flex justify-content-between">
+                                            <div>
+                                                <i class="fa fa-chart-bar color-default" aria-hidden="true"></i>
+                                                <span class="ml-1 font-weight-bold color-default">Locais de acesso</span>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                    <hr>
+    
+    
+                                    <div class="card border-0 chart">
+                                        <div class="card-body">
+                                            <div id="chart"></div>
+                                        </div>
+                                    </div>
+    
+    
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                    </div>
                 </div>
             </div>
-        </section>
+
+
+        </div>
+    </div>
+
     </div>
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
@@ -393,12 +369,1734 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
     <script src="./js/Chart.min.js"></script>
     <script src="https://www.amcharts.com/lib/4/core.js"></script>
-    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
     <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
     <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
     <script src="./js/script.js"></script>
     <script src="./js/myCharts.js"></script>
 
+    <script>
+
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+// Define country data
+var countries = {
+  "AD": {
+    "country": "Andorra",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "andorraLow", "andorraHigh" ]
+  },
+  "AE": {
+    "country": "United Arab Emirates",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "uaeLow", "uaeHigh" ]
+  },
+  "AF": {
+    "country": "Afghanistan",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "AG": {
+    "country": "Antigua and Barbuda",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "antiguaBarbudaLow", "antiguaBarbudaHigh" ]
+  },
+  "AI": {
+    "country": "Anguilla",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "anguillaLow", "anguillaHigh" ]
+  },
+  "AL": {
+    "country": "Albania",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "albaniaLow", "albaniaHigh" ]
+  },
+  "AM": {
+    "country": "Armenia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "armeniaLow", "armeniaHigh" ]
+  },
+  "AO": {
+    "country": "Angola",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "angolaLow", "angolaHigh" ]
+  },
+  "AQ": {
+    "country": "Antarctica",
+    "continent_code": "AN",
+    "continent": "Antarctica",
+    "maps": []
+  },
+  "AR": {
+    "country": "Argentina",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": [ "argentinaLow", "argentinaHigh" ]
+  },
+  "AS": {
+    "country": "American Samoa",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": [ "americanSamoaLow", "americanSamoaHigh" ]
+  },
+  "AT": {
+    "country": "Austria",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "austriaLow", "austriaHigh" ]
+  },
+  "AU": {
+    "country": "Australia",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": [ "australiaLow", "australiaHigh" ]
+  },
+  "AW": {
+    "country": "Aruba",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "arubaLow", "arubaHigh" ]
+  },
+  "AX": {
+    "country": "Aland Islands",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": []
+  },
+  "AZ": {
+    "country": "Azerbaijan",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "azerbaijanLow", "azerbaijanHigh" ]
+  },
+  "BA": {
+    "country": "Bosnia and Herzegovina",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "bosniaHerzegovinaLow", "bosniaHerzegovinaHigh", "bosniaHerzegovinaCantonsLow", "bosniaHerzegovinaCantonsHigh" ]
+  },
+  "BB": {
+    "country": "Barbados",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "barbadosLow", "barbadosHigh" ]
+  },
+  "BD": {
+    "country": "Bangladesh",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "bangladeshLow", "bangladeshHigh" ]
+  },
+  "BE": {
+    "country": "Belgium",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "belgiumLow", "belgiumHigh" ]
+  },
+  "BF": {
+    "country": "Burkina Faso",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "burkinaFasoLow", "burkinaFasoHigh" ]
+  },
+  "BG": {
+    "country": "Bulgaria",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "bulgariaLow", "bulgariaHigh" ]
+  },
+  "BH": {
+    "country": "Bahrain",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "bahrainLow", "bahrainHigh" ]
+  },
+  "BI": {
+    "country": "Burundi",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "burundiLow", "burundiHigh" ]
+  },
+  "BJ": {
+    "country": "Benin",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "beninLow", "beninHigh" ]
+  },
+  "BL": {
+    "country": "Saint Barthelemy",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "BM": {
+    "country": "Bermuda",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "bermudaLow", "bermudaHigh" ]
+  },
+  "BN": {
+    "country": "Brunei Darussalam",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "bruneiDarussalamLow", "bruneiDarussalamHigh" ]
+  },
+  "BO": {
+    "country": "Bolivia, Plurinational State of",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": [ "boliviaLow", "boliviaHigh" ]
+  },
+  "BQ": {
+    "country": "Bonaire, Sint Eustatius and Saba",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "bonaireSintEustatiusSabaLow", "bonaireSintEustatiusSabaHigh" ]
+  },
+  "BR": {
+    "country": "Brazil",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": [ "brazilLow", "brazilHigh" ]
+  },
+  "BS": {
+    "country": "Bahamas",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "BT": {
+    "country": "Bhutan",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "bhutanLow", "bhutanHigh" ]
+  },
+  "BV": {
+    "country": "Bouvet Island",
+    "continent_code": "AN",
+    "continent": "Antarctica",
+    "maps": []
+  },
+  "BW": {
+    "country": "Botswana",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "botswanaLow", "botswanaHigh" ]
+  },
+  "BY": {
+    "country": "Belarus",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "belarusLow", "belarusHigh" ]
+  },
+  "BZ": {
+    "country": "Belize",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "belizeLow", "belizeHigh" ]
+  },
+  "CA": {
+    "country": "Canada",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "canadaLow", "canadaHigh" ]
+  },
+  "CC": {
+    "country": "Cocos (Keeling) Islands",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "CD": {
+    "country": "Congo, the Democratic Republic of the",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "congoDRLow", "congoDRHigh" ]
+  },
+  "CF": {
+    "country": "Central African Republic",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "centralAfricanRepublicLow", "centralAfricanRepublicHigh" ]
+  },
+  "CG": {
+    "country": "Congo",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "congoLow", "congoHigh" ]
+  },
+  "CH": {
+    "country": "Switzerland",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "switzerlandLow", "switzerlandHigh" ]
+  },
+  "CI": {
+    "country": "Cote d'Ivoire",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "CK": {
+    "country": "Cook Islands",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "CL": {
+    "country": "Chile",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": [ "chileLow", "chileHigh" ]
+  },
+  "CM": {
+    "country": "Cameroon",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "cameroonLow", "cameroonHigh" ]
+  },
+  "CN": {
+    "country": "China",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "chinaLow", "chinaHigh" ]
+  },
+  "CO": {
+    "country": "Colombia",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": [ "colombiaLow", "colombiaHigh", "colombiaMuniLow", "colombiaMuniHigh" ]
+  },
+  "CR": {
+    "country": "Costa Rica",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "costaRicaLow", "costaRicaHigh" ]
+  },
+  "CU": {
+    "country": "Cuba",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "CV": {
+    "country": "Cape Verde",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "capeVerdeLow", "capeVerdeHigh" ]
+  },
+  "CW": {
+    "country": "Curacao",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "curacaoLow", "curacaoHigh" ]
+  },
+  "CX": {
+    "country": "Christmas Island",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "CY": {
+    "country": "Cyprus",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "cyprusLow", "cyprusHigh", "cyprusNorthCyprusLow", "cyprusNorthCyprusHigh" ]
+  },
+  "CZ": {
+    "country": "Czech Republic",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "czechiaLow", "czechiaHigh" ]
+  },
+  "DE": {
+    "country": "Germany",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "germanyLow", "germanyHigh" ]
+  },
+  "DJ": {
+    "country": "Djibouti",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "djiboutiLow", "djiboutiHigh" ]
+  },
+  "DK": {
+    "country": "Denmark",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "denmarkLow", "denmarkHigh" ]
+  },
+  "DM": {
+    "country": "Dominica",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "dominicaLow", "dominicaHigh" ]
+  },
+  "DO": {
+    "country": "Dominican Republic",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "dominicanRepublicLow", "dominicanRepublicHigh", "dominicanRepublicMuniLow", "dominicanRepublicMuniHigh" ]
+  },
+  "DZ": {
+    "country": "Algeria",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "algeriaLow", "algeriaHigh" ]
+  },
+  "EC": {
+    "country": "Ecuador",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": [ "ecuadorLow", "ecuadorHigh" ]
+  },
+  "EE": {
+    "country": "Estonia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "estoniaLow", "estoniaHigh" ]
+  },
+  "EG": {
+    "country": "Egypt",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "egyptLow", "egyptHigh" ]
+  },
+  "EH": {
+    "country": "Western Sahara",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "ER": {
+    "country": "Eritrea",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "ES": {
+    "country": "Spain",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "spainLow", "spainHigh", "spainProvincesLow", "spainProvincesHigh" ]
+  },
+  "ET": {
+    "country": "Ethiopia",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "FI": {
+    "country": "Finland",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "finlandLow", "finlandHigh" ]
+  },
+  "FJ": {
+    "country": "Fiji",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": [ "fijiEastLow", "fijiEastHigh", "fijiWestLow", "fijiWestHigh" ]
+  },
+  "FK": {
+    "country": "Falkland Islands (Malvinas)",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": []
+  },
+  "FM": {
+    "country": "Micronesia, Federated States of",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "FO": {
+    "country": "Faroe Islands",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "faroeIslandsLow", "faroeIslandsHigh" ]
+  },
+  "FR": {
+    "country": "France",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "franceLow", "franceHigh", "franceDepartmentsLow", "franceDepartmentsHigh" ]
+  },
+  "GA": {
+    "country": "Gabon",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "gabonLow", "gabonHigh" ]
+  },
+  "GB": {
+    "country": "United Kingdom",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "ukLow", "ukHigh", "ukCountiesLow", "ukCountiesHigh" ]
+  },
+  "GB-CHA": {
+    "country": "Channel Islands",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "channelIslandsLow", "channelIslandsHigh" ]
+  },
+  "GD": {
+    "country": "Grenada",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "GE": {
+    "country": "Georgia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "georgiaLow", "georgiaHigh", "georgiaSouthOssetiaLow", "georgiaSouthOssetiaHigh" ]
+  },
+  "GF": {
+    "country": "French Guiana",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": [ "frenchGuianaLow", "frenchGuianaHigh" ]
+  },
+  "GG": {
+    "country": "Guernsey",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": []
+  },
+  "GH": {
+    "country": "Ghana",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "GI": {
+    "country": "Gibraltar",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": []
+  },
+  "GL": {
+    "country": "Greenland",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "greenlandLow", "greenlandHigh" ]
+  },
+  "GM": {
+    "country": "Gambia",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "GN": {
+    "country": "Guinea",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "guineaLow", "guineaHigh" ]
+  },
+  "GP": {
+    "country": "Guadeloupe",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "GQ": {
+    "country": "Equatorial Guinea",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "equatorialGuineaLow", "equatorialGuineaHigh" ]
+  },
+  "GR": {
+    "country": "Greece",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "greeceLow", "greeceHigh" ]
+  },
+  "GS": {
+    "country": "South Georgia and the South Sandwich Islands",
+    "continent_code": "AN",
+    "continent": "Antarctica",
+    "maps": []
+  },
+  "GT": {
+    "country": "Guatemala",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "GU": {
+    "country": "Guam",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "GW": {
+    "country": "Guinea-Bissau",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "GY": {
+    "country": "Guyana",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": []
+  },
+  "HK": {
+    "country": "Hong Kong",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "hongKongLow", "hongKongHigh" ]
+  },
+  "HM": {
+    "country": "Heard Island and McDonald Islands",
+    "continent_code": "AN",
+    "continent": "Antarctica",
+    "maps": []
+  },
+  "HN": {
+    "country": "Honduras",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "hondurasLow", "hondurasHigh" ]
+  },
+  "HR": {
+    "country": "Croatia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "croatiaLow", "croatiaHigh" ]
+  },
+  "HT": {
+    "country": "Haiti",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "HU": {
+    "country": "Hungary",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "hungaryLow", "hungaryHigh" ]
+  },
+  "ID": {
+    "country": "Indonesia",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "indonesiaLow", "indonesiaHigh" ]
+  },
+  "IE": {
+    "country": "Ireland",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "irelandLow", "irelandHigh" ]
+  },
+  "IL": {
+    "country": "Israel",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "israelLow", "israelHigh", "israelPalestineLow", "israelPalestineHigh" ]
+  },
+  "IM": {
+    "country": "Isle of Man",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": []
+  },
+  "IN": {
+    "country": "India",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "indiaLow", "indiaHigh" ]
+  },
+  "IO": {
+    "country": "British Indian Ocean Territory",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "IQ": {
+    "country": "Iraq",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "IR": {
+    "country": "Iran, Islamic Republic of",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "IS": {
+    "country": "Iceland",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "icelandLow", "icelandHigh" ]
+  },
+  "IT": {
+    "country": "Italy",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "italyLow", "italyHigh" ]
+  },
+  "JE": {
+    "country": "Jersey",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": []
+  },
+  "JM": {
+    "country": "Jamaica",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "JO": {
+    "country": "Jordan",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "JP": {
+    "country": "Japan",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "japanLow", "japanHigh" ]
+  },
+  "KE": {
+    "country": "Kenya",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "kenyaLow", "kenyaHigh" ]
+  },
+  "KG": {
+    "country": "Kyrgyzstan",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "kyrgyzstanLow", "kyrgyzstanHigh" ]
+  },
+  "KH": {
+    "country": "Cambodia",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "cambodiaLow", "cambodiaHigh" ]
+  },
+  "KI": {
+    "country": "Kiribati",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "KM": {
+    "country": "Comoros",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "KN": {
+    "country": "Saint Kitts and Nevis",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "KP": {
+    "country": "Korea, Democratic People's Republic of",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "northKoreaLow", "northKoreaHigh" ]
+  },
+  "KR": {
+    "country": "Korea, Republic of",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "southKoreaLow", "southKoreaHigh" ]
+  },
+  "KT": {
+    "country": "Saint Kitts and Nevis",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "stKittsNevisLow", "stKittsNevisHigh" ]
+  },
+  "KW": {
+    "country": "Kuwait",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "KY": {
+    "country": "Cayman Islands",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "KZ": {
+    "country": "Kazakhstan",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "kazakhstanLow", "kazakhstanHigh" ]
+  },
+  "LA": {
+    "country": "Lao People's Democratic Republic",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "LB": {
+    "country": "Lebanon",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "LC": {
+    "country": "Saint Lucia",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "saintLuciaLow", "saintLuciaHigh" ]
+  },
+  "LI": {
+    "country": "Liechtenstein",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "liechtensteinLow", "liechtensteinHigh" ]
+  },
+  "LK": {
+    "country": "Sri Lanka",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "sriLankaLow", "sriLankaHigh" ]
+  },
+  "LR": {
+    "country": "Liberia",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "LS": {
+    "country": "Lesotho",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "LT": {
+    "country": "Lithuania",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "lithuaniaLow", "lithuaniaHigh" ]
+  },
+  "LU": {
+    "country": "Luxembourg",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": []
+  },
+  "LV": {
+    "country": "Latvia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "latviaLow", "latviaHigh" ]
+  },
+  "LY": {
+    "country": "Libya",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "MA": {
+    "country": "Morocco",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "moroccoLow", "moroccoHigh" ]
+  },
+  "MC": {
+    "country": "Monaco",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": []
+  },
+  "MD": {
+    "country": "Moldova, Republic of",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "moldovaLow", "moldovaHigh" ]
+  },
+  "ME": {
+    "country": "Montenegro",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": []
+  },
+  "MF": {
+    "country": "Saint Martin (French Part)",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "MG": {
+    "country": "Madagascar",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "MH": {
+    "country": "Marshall Islands",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "MK": {
+    "country": "North Macedonia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": []
+  },
+  "ML": {
+    "country": "Mali",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "maliLow", "maliHigh" ]
+  },
+  "MM": {
+    "country": "Myanmar",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "MN": {
+    "country": "Mongolia",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "mongoliaLow", "mongoliaHigh" ]
+  },
+  "MO": {
+    "country": "Macao",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "MP": {
+    "country": "Northern Mariana Islands",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "MQ": {
+    "country": "Martinique",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "MR": {
+    "country": "Mauritania",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "MS": {
+    "country": "Montserrat",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "MT": {
+    "country": "Malta",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "maltaLow", "maltaHigh" ]
+  },
+  "MU": {
+    "country": "Mauritius",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "MV": {
+    "country": "Maldives",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "maldivesLow", "maldivesHigh", "maldivesIslandsLow", "maldivesIslandsHigh" ]
+  },
+  "MW": {
+    "country": "Malawi",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "MX": {
+    "country": "Mexico",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "mexicoLow", "mexicoHigh" ]
+  },
+  "MY": {
+    "country": "Malaysia",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "malaysiaLow", "malaysiaHigh" ]
+  },
+  "MZ": {
+    "country": "Mozambique",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "NA": {
+    "country": "Namibia",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "namibiaLow", "namibiaHigh" ]
+  },
+  "NC": {
+    "country": "New Caledonia",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "NE": {
+    "country": "Niger",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "NF": {
+    "country": "Norfolk Island",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "NG": {
+    "country": "Nigeria",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "nigeriaLow", "nigeriaHigh" ]
+  },
+  "NI": {
+    "country": "Nicaragua",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "nicaraguaLow", "nicaraguaHigh" ]
+  },
+  "NL": {
+    "country": "Netherlands",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "netherlandsLow", "netherlandsHigh" ]
+  },
+  "NO": {
+    "country": "Norway",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "norwayLow", "norwayHigh" ]
+  },
+  "NP": {
+    "country": "Nepal",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "nepalLow", "nepalHigh" ]
+  },
+  "NR": {
+    "country": "Nauru",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "NU": {
+    "country": "Niue",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "NZ": {
+    "country": "New Zealand",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": [ "newZealandLow", "newZealandHigh" ]
+  },
+  "OM": {
+    "country": "Oman",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "omanLow", "omanHigh" ]
+  },
+  "PA": {
+    "country": "Panama",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "panamaLow", "panamaHigh" ]
+  },
+  "PE": {
+    "country": "Peru",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": [ "peruLow", "peruHigh" ]
+  },
+  "PF": {
+    "country": "French Polynesia",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "PG": {
+    "country": "Papua New Guinea",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "PH": {
+    "country": "Philippines",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "philippinesLow", "philippinesHigh" ]
+  },
+  "PK": {
+    "country": "Pakistan",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "pakistanLow", "pakistanHigh" ]
+  },
+  "PL": {
+    "country": "Poland",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "polandLow", "polandHigh" ]
+  },
+  "PM": {
+    "country": "Saint Pierre and Miquelon",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "stPierreMiquelonLow", "stPierreMiquelonHigh" ]
+  },
+  "PN": {
+    "country": "Pitcairn",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "PR": {
+    "country": "Puerto Rico",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "puertoRicoLow", "puertoRicoHigh" ]
+  },
+  "PS": {
+    "country": "Palestinian, State of",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "palestineLow", "palestineHigh" ]
+  },
+  "PT": {
+    "country": "Portugal",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "portugalLow", "portugalHigh", "portugalRegionsLow", "portugalRegionsHigh" ]
+  },
+  "PW": {
+    "country": "Palau",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "PY": {
+    "country": "Paraguay",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": [ "paraguayLow", "paraguayHigh"]
+  },
+  "QA": {
+    "country": "Qatar",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "qatarLow", "qatarHigh" ]
+  },
+  "RE": {
+    "country": "Reunion",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "RO": {
+    "country": "Romania",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "romaniaLow", "romaniaHigh" ]
+  },
+  "RS": {
+    "country": "Serbia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "serbiaLow", "serbiaHigh", "serbiaNoKosovoLow", "serbiaNoKosovoHigh" ]
+  },
+  "RU": {
+    "country": "Russian Federation",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "russiaLow", "russiaHigh", "russiaCrimeaLow", "russiaCrimeaHigh" ]
+  },
+  "RW": {
+    "country": "Rwanda",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "SA": {
+    "country": "Saudi Arabia",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "saudiArabiaLow", "saudiArabiaHigh" ]
+  },
+  "SB": {
+    "country": "Solomon Islands",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": [ "solomonIslandsLow", "solomonIslandsHigh" ]
+  },
+  "SC": {
+    "country": "Seychelles",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "seychellesLow", "seychellesHigh" ]
+  },
+  "SD": {
+    "country": "Sudan",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "sudanLow", "sudanHigh" ]
+  },
+  "SE": {
+    "country": "Sweden",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "swedenLow", "swedenHigh" ]
+  },
+  "SG": {
+    "country": "Singapore",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "singaporeLow", "singaporeHigh" ]
+  },
+  "SH": {
+    "country": "Saint Helena, Ascension and Tristan da Cunha",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "saintHelenaLow", "saintHelenaHigh" ]
+  },
+  "SI": {
+    "country": "Slovenia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "sloveniaLow", "sloveniaHigh", "sloveniaRegionsLow", "sloveniaRegionsHigh" ]
+  },
+  "SJ": {
+    "country": "Svalbard and Jan Mayen",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "svalbardLow", "svalbardHigh" ]
+  },
+  "SK": {
+    "country": "Slovakia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "slovakiaLow", "slovakiaHigh" ]
+  },
+  "SL": {
+    "country": "Sierra Leone",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "SM": {
+    "country": "San Marino",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "sanMarinoLow", "sanMarinoHigh" ]
+  },
+  "SN": {
+    "country": "Senegal",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "senegalLow", "senegalHigh" ]
+  },
+  "SO": {
+    "country": "Somalia",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "somaliaLow", "somaliaHigh" ]
+  },
+  "SR": {
+    "country": "Suriname",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": []
+  },
+  "SS": {
+    "country": "South Sudan",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "ST": {
+    "country": "Sao Tome and Principe",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "saoTomePrincipeLow", "saoTomePrincipeHigh" ]
+  },
+  "SV": {
+    "country": "El Salvador",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "elSalvadorLow", "elSalvadorHigh" ]
+  },
+  "SX": {
+    "country": "Sint Maarten (Dutch Part)",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "SY": {
+    "country": "Syrian Arab Republic",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "syriaLow", "syriaHigh" ]
+  },
+  "SZ": {
+    "country": "Swaziland",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "eswatiniLow", "eswatiniHigh" ]
+  },
+  "TC": {
+    "country": "Turks and Caicos Islands",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "TD": {
+    "country": "Chad",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "chadLow", "chadHigh" ]
+  },
+  "TF": {
+    "country": "French Southern Territories",
+    "continent_code": "AN",
+    "continent": "Antarctica",
+    "maps": []
+  },
+  "TG": {
+    "country": "Togo",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "TH": {
+    "country": "Thailand",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "thailandLow", "thailandHigh" ]
+  },
+  "TJ": {
+    "country": "Tajikistan",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "tajikistanLow", "tajikistanHigh" ]
+  },
+  "TK": {
+    "country": "Tokelau",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "TL": {
+    "country": "Timor-Leste",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "TM": {
+    "country": "Turkmenistan",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "TN": {
+    "country": "Tunisia",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "tunisiaLow", "tunisiaHigh" ]
+  },
+  "TO": {
+    "country": "Tonga",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "TR": {
+    "country": "Turkey",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "turkeyLow", "turkeyHigh" ]
+  },
+  "TT": {
+    "country": "Trinidad and Tobago",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "TV": {
+    "country": "Tuvalu",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "TW": {
+    "country": "Taiwan, Province of China",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "TZ": {
+    "country": "Tanzania, United Republic of",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "tanzaniaLow", "tanzaniaHigh" ]
+  },
+  "UA": {
+    "country": "Ukraine",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "ukraineLow", "ukraineHigh" ]
+  },
+  "UG": {
+    "country": "Uganda",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "UM": {
+    "country": "United States Minor Outlying Islands",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "US": {
+    "country": "United States",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "usaLow", "usaHigh", "usaTerritoriesLow", "usaTerritoriesHigh", "usaTerritories2Low", "usaTerritories2High" ]
+  },
+  "UY": {
+    "country": "Uruguay",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": []
+  },
+  "UZ": {
+    "country": "Uzbekistan",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "uzbekinstanLow", "uzbekinstanHigh" ]
+  },
+  "VA": {
+    "country": "Holy See (Vatican City State)",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "vaticanLow", "vaticanHigh" ]
+  },
+  "VC": {
+    "country": "Saint Vincent and the Grenadines",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": [ "saintVincentLow", "saintVincentHigh" ]
+  },
+  "VE": {
+    "country": "Venezuela, Bolivarian Republic of",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": [ "venezuelaLow", "venezuelaHigh" ]
+  },
+  "VG": {
+    "country": "Virgin Islands, British",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "VI": {
+    "country": "Virgin Islands, U.S.",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "VN": {
+    "country": "Viet Nam",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "vietnamLow", "vietnamHigh" ]
+  },
+  "VU": {
+    "country": "Vanuatu",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "WF": {
+    "country": "Wallis and Futuna",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": []
+  },
+  "WS": {
+    "country": "Samoa",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": [ "samoaLow", "samoaHigh" ]
+  },
+  "YE": {
+    "country": "Yemen",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": [ "yemenLow", "yemenHigh" ]
+  },
+  "YT": {
+    "country": "Mayotte",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": []
+  },
+  "ZA": {
+    "country": "South Africa",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "southAfricaLow", "southAfricaHigh" ]
+  },
+  "ZM": {
+    "country": "Zambia",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "zambiaLow", "zambiaHigh" ]
+  },
+  "ZW": {
+    "country": "Zimbabwe",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": [ "zimbabweLow", "zimbabweHigh" ]
+  },
+  "XK": {
+    "country": "Kosovo",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": [ "kosovoLow", "kosovoHigh" ]
+  }
+};
+
+
+var continents = {
+  "AF": 0,
+  "AN": 1,
+  "AS": 2,
+  "EU": 3,
+  "NA": 4,
+  "OC": 5,
+  "SA": 6
+}
+
+// Create map instance
+var chart = am4core.create("chart", am4maps.MapChart);
+chart.projection = new am4maps.projections.Miller();
+
+// Create map polygon series for world map
+var worldSeries = chart.series.push(new am4maps.MapPolygonSeries());
+worldSeries.useGeodata = true;
+worldSeries.geodata = am4geodata_worldLow;
+worldSeries.exclude = ["AQ"];
+
+var worldPolygon = worldSeries.mapPolygons.template;
+worldPolygon.tooltipText = "{name}";
+worldPolygon.nonScalingStroke = true;
+worldPolygon.strokeOpacity = 0.5;
+worldPolygon.fill = am4core.color("#999");
+worldPolygon.propertyFields.fill = "color";
+
+var hs = worldPolygon.states.create("hover");
+hs.properties.fill = chart.colors.getIndex(9);
+
+
+// Create country specific series (but hide it for now)
+var countrySeries = chart.series.push(new am4maps.MapPolygonSeries());
+countrySeries.useGeodata = true;
+countrySeries.hide();
+countrySeries.geodataSource.events.on("done", function(ev) {
+  worldSeries.hide();
+  countrySeries.show();
+});
+
+var countryPolygon = countrySeries.mapPolygons.template;
+countryPolygon.tooltipText = "{name}";
+countryPolygon.nonScalingStroke = true;
+countryPolygon.strokeOpacity = 0.5;
+countryPolygon.fill = am4core.color("#999");
+
+var hs = countryPolygon.states.create("hover");
+hs.properties.fill = chart.colors.getIndex(9);
+
+// Set up click events
+worldPolygon.events.on("hit", function(ev) {
+  ev.target.series.chart.zoomToMapObject(ev.target);
+  var map = ev.target.dataItem.dataContext.map;
+  if (map) {
+    ev.target.isHover = false;
+    countrySeries.geodataSource.url = "https://www.amcharts.com/lib/4/geodata/json/" + map + ".json";
+    countrySeries.geodataSource.load();
+  }
+});
+
+// Set up data for countries
+var data = [];
+for(var id in countries) {
+  if (countries.hasOwnProperty(id)) {
+    var country = countries[id];
+    if (country.maps.length) {
+      data.push({
+        id: id,
+        color: chart.colors.getIndex(continents[country.continent_code]),
+        map: country.maps[0]
+      });
+    }
+  }
+}
+worldSeries.data = data;
+
+// Zoom control
+chart.zoomControl = new am4maps.ZoomControl();
+
+var homeButton = new am4core.Button();
+homeButton.events.on("hit", function() {
+  worldSeries.show();
+  countrySeries.hide();
+  chart.goHome();
+});
+
+homeButton.icon = new am4core.Sprite();
+homeButton.padding(7, 5, 7, 5);
+homeButton.width = 30;
+homeButton.icon.path = "M16,8 L14,8 L14,16 L10,16 L10,10 L6,10 L6,16 L2,16 L2,8 L0,8 L8,0 L16,8 Z M16,8";
+homeButton.marginBottom = 10;
+homeButton.parent = chart.zoomControl;
+homeButton.insertBefore(chart.zoomControl.plusButton);
+
+}); // end am4core.ready()
+
+
+      
+        am4core.ready(function() {
+        
+        // Themes begin
+        am4core.useTheme(am4themes_animated);
+        // Themes end
+        
+        var chart = am4core.create("chartdiv", am4charts.XYChart);
+        chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
+        
+        chart.data = [
+          {
+            country: "Samsung s10",
+            visits: 380
+          },
+          {
+            country: "iPhone 7s",
+            visits: 185
+          },
+          {
+            country: "Samsung s10 plus",
+            visits: 125
+          },
+          {
+            country: "Macbook Pro",
+            visits: 100
+          },
+          {
+            country: "Macbook",
+            visits: 80
+          },
+          {
+            country: "iPad 6",
+            visits: 50
+          }
+        ];
+        
+        var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+        categoryAxis.renderer.grid.template.location = 0;
+        categoryAxis.dataFields.category = "country";
+        categoryAxis.renderer.minGridDistance = 40;
+        categoryAxis.fontSize = 11;
+        
+        var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+        valueAxis.min = 0;
+        valueAxis.max = 500;
+        valueAxis.strictMinMax = true;
+        valueAxis.renderer.minGridDistance = 30;
+        // axis break
+        var axisBreak = valueAxis.axisBreaks.create();
+        axisBreak.startValue = 2100;
+        axisBreak.endValue = 22900;
+        axisBreak.breakSize = 0.005;
+        
+        // fixed axis break
+        var d = (axisBreak.endValue - axisBreak.startValue) / (valueAxis.max - valueAxis.min);
+        axisBreak.breakSize = 0.05 * (1 - d) / d; // 0.05 means that the break will take 5% of the total value axis height
+        
+        // make break expand on hover
+        var hoverState = axisBreak.states.create("hover");
+        hoverState.properties.breakSize = 1;
+        hoverState.properties.opacity = 0.1;
+        hoverState.transitionDuration = 1500;
+        
+        axisBreak.defaultState.transitionDuration = 1000;
+        /*
+        // this is exactly the same, but with events
+        axisBreak.events.on("over", function() {
+          axisBreak.animate(
+            [{ property: "breakSize", to: 1 }, { property: "opacity", to: 0.1 }],
+            1500,
+            am4core.ease.sinOut
+          );
+        });
+        axisBreak.events.on("out", function() {
+          axisBreak.animate(
+            [{ property: "breakSize", to: 0.005 }, { property: "opacity", to: 1 }],
+            1000,
+            am4core.ease.quadOut
+          );
+        });*/
+        
+        var series = chart.series.push(new am4charts.ColumnSeries());
+        series.dataFields.categoryX = "country";
+        series.dataFields.valueY = "visits";
+        series.columns.template.tooltipText = "{valueY.value}";
+        series.columns.template.tooltipY = 0;
+        series.columns.template.strokeOpacity = 0;
+        
+        // as by default columns of the same series are of the same color, we add adapter which takes colors from chart.colors color set
+        series.columns.template.adapter.add("fill", function(fill, target) {
+          return chart.colors.getIndex(target.dataItem.index);
+        });
+        
+        }); // end am4core.ready()
+        </script>
+
 
 </body>
+
 </html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashborad</title>
+
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style_2.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../lib/fontawesome/css/all.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- <div class="container-fluid my-header">
+            
+        </div> -->
+        <div class="app">
+            <div class="row">
+                <div class="col my-header">
+                    <span><i class="fa fa-shopping-basket" aria-hidden="true"></i> LojaOnline</span>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-default mr-3">Precisa de Ajuda?</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-4 m-0 p-0">
+                    <div class="card app_sidebar box-shadow">
+                        <div class="body">
+                            <div class="d-flex align-items-center">
+                                <img src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/10_avatar-512.png"
+                                    alt="" width="35">
+                                <span class="font-weight-bold color-default ml-1">Everton Marques</span>
+                            </div>
+
+                            <hr>
+                            <ul class="navbar-nav flex-column ">
+                                <li class="nav-item">
+                                    <a href="../../dashboard.html" class="nav-link sidebar-link">
+                                        <i class="fas fa-home fa-lg mr-2 ml-3 sidebar-icon-menu"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="#" class="nav-link  sidebar-link dropdown-toggle" id="product"
+                                        data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-gift fa-lg mr-2 ml-3 sidebar-icon-menu"></i>
+                                        <span class="arrow"></span>
+                                        Produtos
+                                    </a>
+                                    <div class="sidebar-submenu" aria-labelledby="product">
+                                        <ul>
+                                            <li class="">
+                                                <a href="cadastrarProdutos.html" class="nav-link pl-3">
+                                                    Cadastrar
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="listarProdutos.html" class="nav-link pl-3 ">
+                                                    Listar
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="./perfilDashboard.html" class="nav-link sidebar-link active">
+                                        <i class="fas fa-user fa-lg mr-2 ml-3 sidebar-icon-menu"></i>
+                                        Perfil
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="./msgProduct.html" class="nav-link sidebar-link">
+                                        <i class="fas fa-envelope fa-lg mr-2 ml-3 sidebar-icon-menu"></i>
+                                        Mensagem
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="dashboard.html" class="nav-link sidebar-link">
+                                        <i class="fa fa-sign-out-alt fa-lg mr-2 ml-3 sidebar-icon-menu"></i>
+                                        Sair
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End of sideBar -->
+
+                <div class="col-xl-10 col-lg-3 col-md-4">
+                    <div class="card box-shadow app_main bg-card-title">
+                        <div class="body ">
+                            <div class="row ">
+                                <div class="col d-flex justify-content-between">
+                                    <div>
+                                        <i class="fa fa-user color-default font-title" aria-hidden="true"></i>
+                                        <span class="ml-1 font-weight-bold color-default font-title">Meu Perfil</span>
+                                    </div>
+                                    <div>
+                                        <span class="ml-1 font-weight-bold color-default font-subtitle">Aqui você pode editar seu dados pessoasis</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-12 col-sm-12 pt-4">
+                            <!-- card -->
+                            <div class="card box-shadow ">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-between">
+                                        <div class="pt-3 pl-3">
+                                            <span class="ml-1 font-weight-bold color-default">Meu Perfil</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="card-body py-2">
+                                            <div class="">
+                                                <form id="form">
+                                                    <div class="col-lx-12">
+                                                        <div class="form-group">
+                                                            <div class="row">
+                                                                <div class="col-xl-6">
+                                                                    <label for="name-product" class="text-muted">
+                                                                        <i class="fa fa-user text-info"
+                                                                            aria-hidden="true"></i>
+                                                                        Nome:
+                                                                    </label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Primeiro Nome">
+                                                                </div>
+                                                                <div class="col-xl-6">
+                                                                    <label for="name-product" class="text-muted">
+                                                                        <i class="fa fa-user text-info"
+                                                                            aria-hidden="true"></i>
+                                                                        Sobrenome:
+                                                                    </label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Último Nome">
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col mt-4">
+                                                                    <label for="name-product" class="text-muted">
+                                                                        <i class="fa fa-envelope text-info aria-hidden="></i>
+                                                                        E-mail:
+                                                                    </label>
+                                                                    <input type="email" class="form-control"
+                                                                        placeholder="Seu e-mail">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group mt-4">
+                                                                <div class="row">
+                                                                    <div class="col-xl-6">
+                                                                        <label for="name-product" class="text-muted">
+                                                                            <i class="fa fa-calendar text-info"
+                                                                                aria-hidden="true"></i>
+                                                                        Nascimento:
+                                                                        </label>
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="Data de nascimento">
+                                                                    </div>
+                                                                    <div class="col-xl-6">
+                                                                        <label for="name-product" class="text-muted">
+                                                                            <i class="fa fa-briefcase text-info"
+                                                                                aria-hidden="true"></i>
+                                                                            CPF:
+                                                                        </label>
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="CPF">
+                                                                    </div>
+    
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group mt-4">
+                                                                <div class="row">
+                                                                    <div class="col-xl-6">
+                                                                        <label for="name-product" class="text-muted">
+                                                                            <i class="fa fa-unlock-alt text-info"
+                                                                                aria-hidden="true"></i>
+                                                                            Senha:
+                                                                        </label>
+                                                                        <input type="password" class="form-control"
+                                                                            placeholder="Digite sua senha">
+                                                                    </div>
+                                                                    <div class="col-xl-6">
+                                                                        <label for="name-product" class="text-muted">
+                                                                            <i class="fa fa-unlock-alt text-info"
+                                                                                aria-hidden="true"></i>
+                                                                            Repetir Senha:
+                                                                        </label>
+                                                                        <input type="password" class="form-control"
+                                                                            placeholder="Digite sua senha novamente">
+                                                                    </div>
+    
+                                                                </div>
+                                                            </div>
+
+                                                            
+
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-5">
+                                    <div class="col">
+                                        <div class="mt-5 text-center">
+                                            
+                                            <button type="button" class="btn btn-info">Atualizar</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- end of card -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="./js/Chart.min.js"></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/myCharts.js"></script>
+
+</body>
+
+</html>
